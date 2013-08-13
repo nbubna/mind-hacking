@@ -5,7 +5,7 @@ Words are the code for operating the mind. Not the most efficient API, but pleas
 
 Here's the content:
 
-[What's Wrong With Extending the DOM Now?][extenddom] ([comments][extenddom-c]
+[What's Wrong With Extending the DOM Now?][extenddom] ([comments][extenddom-c])
 
 [extenddom]: https://github.com/nbubna/mind-hacking/blob/gh-pages/extending-the-dom.md
 [extenddom-c]: https://github.com/nbubna/mind-hacking/issues/1
