@@ -54,7 +54,7 @@ The conflating of properties and attributes stopped after IE8. And the [famous m
 
 [Browser]: http://perfectionkills.com/whats-wrong-with-extending-the-dom/#bonus_browser_bugs
 
-Bugs will always be there for those stuck in the past, but in the present, they are closely hounded Wrappers and extenders alike ought still keep a sharp eye out, especially in bleeding-edge features, but the core DOM APIs are now regularly battle-tested by hordes of barbarian code all over the planet. 
+Bugs will always be there for those stuck in the past, but in the present, they are closely hounded. Wrappers and extenders alike ought still keep a sharp eye out, especially in bleeding-edge features, but the core DOM APIs are now regularly battle-tested by hordes of barbarian code all over the planet. 
 
 #### So What Risk Is Left?
 
@@ -64,7 +64,7 @@ Not too much. I believe the list of risks particular to DOM extenders has been r
 * Name conflicts with future/proprietary DOM enhancements
 * Name conflicts with named forms
 
-Dealing with older browsers in this case means not falling back to increasingly desperate or risky measures but directing them to upgrade instructions or a reduced-functionality version. Well-established techniques abound: conditional comments, [Modernizr][Modernizr], even server side response changes are legitimate.
+Dealing with older browsers in this case means not falling back to increasingly desperate or risky measures but directing the user to either upgrade instructions or a reduced-functionality version. Well-established techniques abound here: conditional comments, [Modernizr][Modernizr], even server side response changes are legitimate.
 
 [Modernizr]: http://modernizr.com/
 
