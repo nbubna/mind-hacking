@@ -84,13 +84,13 @@ The modern DOM is a rich API, as capable as its wrappers, if not as concise. And
 
 #### Educating Developers
 
-When application developers use jQuery, it is rare that they learn anything but jQuery. They tend to think in jQuery and put all their plugins on the `$` whether they need to be or not. They rarely learn to appreciate the [wealth of knowledge][wealth] out there that is not at api.jquery.com. While they're working actively on the DOM, they know very little about it. Libraries that extend the DOM enhance it instead of hiding it away, enhancing developer's familiarity with the DOM. More developers knowing the DOM, means more developers ready and able to fix bugs, innovate new features, and generally push things forward in the browser environment.
+When application developers use jQuery, it is rare that they learn anything but jQuery. They tend to think in jQuery and put all their plugins on the `$` whether they need to be or not. They rarely learn to appreciate the [wealth of knowledge][wealth] out there that is not at api.jquery.com. While they're interacting with the DOM, they can do so while knowing very little about it. Libraries that enhance the DOM instead of hiding it away also enhance developers' familiarity with it. This is A Good Thing&trade;. More developers knowing the DOM, means more developers ready and able to fix bugs, innovate new features, and generally push things forward in the browser environment.
 
 [wealth]: https://developer.mozilla.org/en-US/docs?menu
 
 #### Trim The Fat
 
-Wrapper APIs can be fairly small, [zepto][zepto] sneaks under 10Kb when you minify and gzip it. But a part of that 10Kb is devoted to just renaming the DOM interface, rather than adding features. Any way your slice it, wrapping one API with a completely alternate API comes at a cost. That cost is small when the API being wrapped is flawed and inconsistent, but as the flaws and inconsistencies get ironed out, the cost becomes ever less worthwhile. The bandwidth headaches of the burgeoning mobile world only make the extra weight more of an issue.
+Wrapper APIs can be fairly small; [zepto][zepto] sneaks under 10Kb when you minify and gzip it. But a part of that 10Kb is devoted to just renaming the DOM interface, rather than adding features. Any way you slice it, wrapping one API with a completely alternate API comes at a cost. That cost is small when the API being wrapped is flawed and inconsistent, but as the flaws and inconsistencies get ironed out, the cost becomes ever less worthwhile. The bandwidth headaches of the burgeoning mobile world only make the extra weight more of an issue.
 
 [zepto]: http://zeptojs.com/
 
@@ -121,7 +121,7 @@ The DOM is not always pleasant to use. It is not always concise or convenient. T
 
 The prototypes are exposed and you can extend them. This should outperform wrappers and manual extensions, but does raise the risk of conflicts somewhat. Don't do this until you know the DOM (it's present variations and future direction) well enough to choose names that work well to avoid conflicts.
 
-If you are more conflict-shy than performance-focused, you can step lightly and create libraries that only extend when and where they are used and no more, preferable with a small number of additional properties too. Such libraries would not be worth the penalty for DOM-intensive applications but may be able to achieve [features][features] prototype-based DOM extenders never could.
+If you are more conflict-shy than performance-focused, you can step lightly and create libraries that only extend when and where they are used and no more, preferable with a small number of additional properties too. Such libraries would not be worth the penalty for DOM-intensive applications but may be able to easily achieve [features][features] prototype-based DOM extenders find unpleasant.
 
 [features]: http://nbubna.github.io/HTML#dot-traversal
 
@@ -129,17 +129,18 @@ I see great value in both techniques, but for different situations. It would pro
 
 #### The Deciding Factor
 
-Can you afford to deny (full) support to IE8 users? Windows XP stops getting security updates in a matter of months, and it's approaching demise is helping to purge IE8 from the ecosystem. But that [may take a while][may], and meanwhile, IE8 still carries [just under 10%][just] of the market. Whether that number is high enough to avoid DOM extenders is not a question with a single answer. Google has cut off IE8 support already and their [next platform][next] won't even support IE9, while some businesses still demand IE6 support for web applications. Do you want to press the web forward or pander to stubborn legacy users? Every choice is a trade off.
+Can you afford to deny (full) support to IE8 users? Windows XP stops getting security updates on [April 8, 2014][april], and it's approaching demise is helping to purge IE8 from the ecosystem. But that [may take a while][may], and meanwhile, IE8 still carries [just under 10%][just] of the market. Whether that number is high enough to avoid DOM extenders is not a question with a single answer. Google has cut off IE8 support already and their [next platform][next] won't even support IE9, while some businesses still demand IE6 support for web applications. Do you want to press the web forward or pander to stubborn legacy users? Every choice is a trade off.
 
 [may]: http://slashdot.org/story/13/08/08/027211/china-has-a-massive-windows-xp-problem
 [just]: http://www.sitepoint.com/browser-trends-may-2013/
 [next]: http://www.polymer-project.org/compatibility.html
+[april]: http://support.microsoft.com/lifecycle/?LN=en-gb&C2=1173
 
 For myself, i am looking toward the future. I won't rule out supporting some number of features on older browsers, but i will not use them as a starting point or baseline. It is far more important that my applications work well in the exploding mobile device market than the shrinking IE8 market. Limited resources dictate prioritizing growth over legacy. The extra bytes that come with the one-version-fits-all approach are not appreciated by mobile users, especially international ones. So, those with antiquated browsers will get the browsehappy.com treatment until sufficient resources are available to deliver a functional version specifically for them. I may not always design UX [mobile first][mobile], but it now seems obvious to approach platform decisions from that perspective.
 
 [mobile]: http://www.abookapart.com/products/mobile-first
 
-[Leave your comments here][comments]
+[Leave your comments here][comment]
 
 [comment]: https://github.com/nbubna/mind-hacking/issues/1
 
