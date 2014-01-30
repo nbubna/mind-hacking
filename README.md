@@ -9,3 +9,7 @@ Here's the content:
 
 [extenddom]: https://github.com/nbubna/mind-hacking/blob/gh-pages/extending-the-dom.md
 [extenddom-c]: https://github.com/nbubna/mind-hacking/issues/1
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/nbubna/mind-hacking/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
